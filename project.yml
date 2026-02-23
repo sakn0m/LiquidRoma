@@ -1,0 +1,47 @@
+name: LiquidRoma
+options:
+  bundleIdPrefix: com.liquidroma
+  deploymentTarget:
+    iOS: "26.0"
+  xcodeVersion: "26"
+  createIntermediateGroups: true
+  defaultConfig: Release
+  developmentLanguage: it
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    TARGETED_DEVICE_FAMILY: "1,2"
+    INFOPLIST_FILE: LiquidRoma/Info.plist
+    GENERATE_INFOPLIST_FILE: true
+    MARKETING_VERSION: "1.0.0"
+    CURRENT_PROJECT_VERSION: 1
+    ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+
+packages:
+  SwiftProtobuf:
+    url: https://github.com/apple/swift-protobuf.git
+    from: "1.28.0"
+
+targets:
+  LiquidRoma:
+    type: application
+    platform: iOS
+    sources:
+      - path: LiquidRoma
+        excludes:
+          - "**/.DS_Store"
+    dependencies:
+      - package: SwiftProtobuf
+    settings:
+      base:
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: true
+        INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: true
+        INFOPLIST_KEY_UILaunchScreen_Generation: true
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
+        INFOPLIST_KEY_NSLocationWhenInUseUsageDescription: "LiquidRoma needs your location to show nearby stops and bus arrivals."
+        INFOPLIST_KEY_UIStatusBarStyle: ""
+        INFOPLIST_KEY_CFBundleDisplayName: "Liquid Roma"
+    entitlements:
+      path: LiquidRoma/LiquidRoma.entitlements
+      properties: {}

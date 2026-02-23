@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16DA96DB1BE8116BD9767768 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4651C64A622CA5B838FFD97 /* HomeView.swift */; };
+		20CB9FA0037629B6B7652DA1 /* trips.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7E30D3DC157722A0B49738D6 /* trips.txt */; };
+		23E58C7253D1AEB9F45C7603 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFC729010BD1AB4DDE0BA719 /* Assets.xcassets */; };
+		27166964209E968FC91353D0 /* gtfs-realtime.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D748EE95D428E6F6FA023C /* gtfs-realtime.pb.swift */; };
+		27E5C8831BFE8A9195C3DF55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EE0D8C1A11847203A024C2 /* ContentView.swift */; };
+		292DB9D7B92FAE5B901D84E6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF0CE1D845615ABCD8C1143 /* HomeViewModel.swift */; };
+		2F1848F11E215DDFCB924DE4 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27870590C72005CD83B7DA0 /* LocationService.swift */; };
+		3AB2D4BFC1D35F4BD2668DFB /* AlertsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87629D0123529EEFDAC7D45 /* AlertsViewModel.swift */; };
+		3C7329EBBD040135059520CA /* LinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58BA5D5866D36930373D782 /* LinesView.swift */; };
+		424D140D8B00417C463837B9 /* RealtimeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E628F9290494450280E4D6 /* RealtimeModels.swift */; };
+		51B9D76FA45B4BE719B3BB04 /* StopsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C739141656FB70B05DB30C3A /* StopsView.swift */; };
+		53019042F00F2C5EB51705E0 /* QuadTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5038FE5DECDBA7B2DF759D7B /* QuadTree.swift */; };
+		57EEE35E86F6EB2626235F5A /* stop_times.txt in Resources */ = {isa = PBXBuildFile; fileRef = B839AB0E9AF994AF94D4A7FC /* stop_times.txt */; };
+		653D91A45CFC414BA1D3B5A4 /* LinesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC04B65EEADD37F45998999 /* LinesViewModel.swift */; };
+		6691F97EF561AB60423A65C2 /* ArrivalTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA4C91E31EAC1C30A467E13 /* ArrivalTimeView.swift */; };
+		6FE0EB0DE261AF964AE4A744 /* SnakeBusScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481C2021218ACBD555B7FFC8 /* SnakeBusScene.swift */; };
+		7226DFA7A78A97F71027FFFB /* GTFSDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312007E153E1152A09CFDB79 /* GTFSDataService.swift */; };
+		7826EA6BE6AD783F1CA0E982 /* AlertsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D684B35ABC29280B0F6CF2A /* AlertsView.swift */; };
+		7B386E79063925EF3ED251C4 /* stops.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4571CAF2EAF0C7A92AE6E82A /* stops.txt */; };
+		7DDE30FE926DD261B2077D9B /* LineDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94CE93A83C3B43C12BF2BAF /* LineDetailViewModel.swift */; };
+		7EF12824A4B0343717691AC7 /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = DF213B782C6354E76608A7C4 /* SwiftProtobuf */; };
+		80082485E1D24D78008B666A /* LiquidRomaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0966329165DE303CA856E3B5 /* LiquidRomaApp.swift */; };
+		8F1F0543261F6CAEE5175D96 /* agency.txt in Resources */ = {isa = PBXBuildFile; fileRef = 92196179D4E5E008243C702D /* agency.txt */; };
+		97265BE69F04E75A6545F88C /* GTFSModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C734DD5CD39B2D073606DBF9 /* GTFSModels.swift */; };
+		9EEDA7C63006980F0C39294F /* OccupancyBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C17A9BAEA912826965A24 /* OccupancyBadge.swift */; };
+		B667742D57A41F7C34F126E4 /* GTFSRealtimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4E2F851F0E3E1B483DB444 /* GTFSRealtimeService.swift */; };
+		BCD330CA5F1EA12CF48AFD3A /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA8FD832B9258FC28774250 /* SearchView.swift */; };
+		C532A291CC0510EF4728CF6D /* SnakeBusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CFDBF3DC7B4F1501DD9982 /* SnakeBusView.swift */; };
+		C5C5A837C241AFEF8DDFCBB4 /* routes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 34EA6AE619442883F4520D5F /* routes.txt */; };
+		D23DD9E5A92553FC582905CC /* FavoriteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51291E2D663D103810C2DB1 /* FavoriteItem.swift */; };
+		D5C0F0D279F7396B0469340E /* calendar_dates.txt in Resources */ = {isa = PBXBuildFile; fileRef = 50370895B1D87981A7C4969F /* calendar_dates.txt */; };
+		D7682AE1F4160EFFEB3D3D84 /* LineDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAE557DE646B4B00D4A6D0B /* LineDetailView.swift */; };
+		D8B3BB05E603682D94E48AF3 /* StopsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E0270C0DA5CEFDD8CF9E68 /* StopsViewModel.swift */; };
+		E0C0F04305600019D86A65BF /* FavoritesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B0981196CB327CC5C4A75 /* FavoritesService.swift */; };
+		EBF8FBC0CEF2F8FE9C989760 /* shapes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8FB756593B55D3B2FC66C9F1 /* shapes.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00CFDBF3DC7B4F1501DD9982 /* SnakeBusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakeBusView.swift; sourceTree = "<group>"; };
+		0966329165DE303CA856E3B5 /* LiquidRomaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidRomaApp.swift; sourceTree = "<group>"; };
+		15EE0D8C1A11847203A024C2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		26D748EE95D428E6F6FA023C /* gtfs-realtime.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "gtfs-realtime.pb.swift"; sourceTree = "<group>"; };
+		28E628F9290494450280E4D6 /* RealtimeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeModels.swift; sourceTree = "<group>"; };
+		2E4E2F851F0E3E1B483DB444 /* GTFSRealtimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTFSRealtimeService.swift; sourceTree = "<group>"; };
+		312007E153E1152A09CFDB79 /* GTFSDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTFSDataService.swift; sourceTree = "<group>"; };
+		34EA6AE619442883F4520D5F /* routes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = routes.txt; sourceTree = "<group>"; };
+		368C17A9BAEA912826965A24 /* OccupancyBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OccupancyBadge.swift; sourceTree = "<group>"; };
+		40E9D839F47785242DF12401 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		451678F8D8B5FCDCA0C3CD8D /* LiquidRoma.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = LiquidRoma.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4571CAF2EAF0C7A92AE6E82A /* stops.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = stops.txt; sourceTree = "<group>"; };
+		481C2021218ACBD555B7FFC8 /* SnakeBusScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakeBusScene.swift; sourceTree = "<group>"; };
+		4D684B35ABC29280B0F6CF2A /* AlertsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsView.swift; sourceTree = "<group>"; };
+		50370895B1D87981A7C4969F /* calendar_dates.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = calendar_dates.txt; sourceTree = "<group>"; };
+		5038FE5DECDBA7B2DF759D7B /* QuadTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuadTree.swift; sourceTree = "<group>"; };
+		522B0981196CB327CC5C4A75 /* FavoritesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesService.swift; sourceTree = "<group>"; };
+		5CAE557DE646B4B00D4A6D0B /* LineDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineDetailView.swift; sourceTree = "<group>"; };
+		5EA8FD832B9258FC28774250 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		7E30D3DC157722A0B49738D6 /* trips.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = trips.txt; sourceTree = "<group>"; };
+		7EF0CE1D845615ABCD8C1143 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		8FB756593B55D3B2FC66C9F1 /* shapes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = shapes.txt; sourceTree = "<group>"; };
+		92196179D4E5E008243C702D /* agency.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = agency.txt; sourceTree = "<group>"; };
+		9DA4C91E31EAC1C30A467E13 /* ArrivalTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalTimeView.swift; sourceTree = "<group>"; };
+		A4651C64A622CA5B838FFD97 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A51291E2D663D103810C2DB1 /* FavoriteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteItem.swift; sourceTree = "<group>"; };
+		B0E0270C0DA5CEFDD8CF9E68 /* StopsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsViewModel.swift; sourceTree = "<group>"; };
+		B27870590C72005CD83B7DA0 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		B58BA5D5866D36930373D782 /* LinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinesView.swift; sourceTree = "<group>"; };
+		B839AB0E9AF994AF94D4A7FC /* stop_times.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = stop_times.txt; sourceTree = "<group>"; };
+		BB73641FCBAC308A38B327BC /* LiquidRoma.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LiquidRoma.entitlements; sourceTree = "<group>"; };
+		C734DD5CD39B2D073606DBF9 /* GTFSModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTFSModels.swift; sourceTree = "<group>"; };
+		C739141656FB70B05DB30C3A /* StopsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsView.swift; sourceTree = "<group>"; };
+		C87629D0123529EEFDAC7D45 /* AlertsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsViewModel.swift; sourceTree = "<group>"; };
+		CFC729010BD1AB4DDE0BA719 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E94CE93A83C3B43C12BF2BAF /* LineDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineDetailViewModel.swift; sourceTree = "<group>"; };
+		EEC04B65EEADD37F45998999 /* LinesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinesViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53EFB0C8E09E72E8BB5AE691 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EF12824A4B0343717691AC7 /* SwiftProtobuf in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22680B6B20F5F545E5DFFCB2 /* rome_static_gtfs */ = {
+			isa = PBXGroup;
+			children = (
+				92196179D4E5E008243C702D /* agency.txt */,
+				50370895B1D87981A7C4969F /* calendar_dates.txt */,
+				34EA6AE619442883F4520D5F /* routes.txt */,
+				8FB756593B55D3B2FC66C9F1 /* shapes.txt */,
+				B839AB0E9AF994AF94D4A7FC /* stop_times.txt */,
+				4571CAF2EAF0C7A92AE6E82A /* stops.txt */,
+				7E30D3DC157722A0B49738D6 /* trips.txt */,
+			);
+			path = rome_static_gtfs;
+			sourceTree = "<group>";
+		};
+		2683253F2B7ABC4CCE049587 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C87629D0123529EEFDAC7D45 /* AlertsViewModel.swift */,
+				7EF0CE1D845615ABCD8C1143 /* HomeViewModel.swift */,
+				E94CE93A83C3B43C12BF2BAF /* LineDetailViewModel.swift */,
+				EEC04B65EEADD37F45998999 /* LinesViewModel.swift */,
+				B0E0270C0DA5CEFDD8CF9E68 /* StopsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2704AF5BEB01B2B6FF6B70C3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4D684B35ABC29280B0F6CF2A /* AlertsView.swift */,
+				15EE0D8C1A11847203A024C2 /* ContentView.swift */,
+				A4651C64A622CA5B838FFD97 /* HomeView.swift */,
+				5CAE557DE646B4B00D4A6D0B /* LineDetailView.swift */,
+				B58BA5D5866D36930373D782 /* LinesView.swift */,
+				5EA8FD832B9258FC28774250 /* SearchView.swift */,
+				C739141656FB70B05DB30C3A /* StopsView.swift */,
+				4FF7C966C77B98B01DBD9A52 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		27B216B868E5AA4153F6C1F4 /* DataStructures */ = {
+			isa = PBXGroup;
+			children = (
+				5038FE5DECDBA7B2DF759D7B /* QuadTree.swift */,
+			);
+			path = DataStructures;
+			sourceTree = "<group>";
+		};
+		4FF7C966C77B98B01DBD9A52 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9DA4C91E31EAC1C30A467E13 /* ArrivalTimeView.swift */,
+				368C17A9BAEA912826965A24 /* OccupancyBadge.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		68ACE32DB18988F1CE77DF4B = {
+			isa = PBXGroup;
+			children = (
+				A8418E2E2B1B3A08E6CEC9D3 /* LiquidRoma */,
+				F435E493C9E4963A89812256 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A53A86A912E0A7635B66E830 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0966329165DE303CA856E3B5 /* LiquidRomaApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A8418E2E2B1B3A08E6CEC9D3 /* LiquidRoma */ = {
+			isa = PBXGroup;
+			children = (
+				40E9D839F47785242DF12401 /* Info.plist */,
+				BB73641FCBAC308A38B327BC /* LiquidRoma.entitlements */,
+				A53A86A912E0A7635B66E830 /* App */,
+				27B216B868E5AA4153F6C1F4 /* DataStructures */,
+				F091BFACC46A616BDD2BA3B2 /* Game */,
+				F3D4B750898AE3E26A3FE94F /* Models */,
+				E54920BE5B52FAA0F6D41732 /* Resources */,
+				CA24CB90E248A24C3AE8CAEF /* Services */,
+				2683253F2B7ABC4CCE049587 /* ViewModels */,
+				2704AF5BEB01B2B6FF6B70C3 /* Views */,
+			);
+			path = LiquidRoma;
+			sourceTree = "<group>";
+		};
+		CA24CB90E248A24C3AE8CAEF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				522B0981196CB327CC5C4A75 /* FavoritesService.swift */,
+				26D748EE95D428E6F6FA023C /* gtfs-realtime.pb.swift */,
+				312007E153E1152A09CFDB79 /* GTFSDataService.swift */,
+				2E4E2F851F0E3E1B483DB444 /* GTFSRealtimeService.swift */,
+				B27870590C72005CD83B7DA0 /* LocationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E54920BE5B52FAA0F6D41732 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CFC729010BD1AB4DDE0BA719 /* Assets.xcassets */,
+				22680B6B20F5F545E5DFFCB2 /* rome_static_gtfs */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F091BFACC46A616BDD2BA3B2 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				481C2021218ACBD555B7FFC8 /* SnakeBusScene.swift */,
+				00CFDBF3DC7B4F1501DD9982 /* SnakeBusView.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		F3D4B750898AE3E26A3FE94F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A51291E2D663D103810C2DB1 /* FavoriteItem.swift */,
+				C734DD5CD39B2D073606DBF9 /* GTFSModels.swift */,
+				28E628F9290494450280E4D6 /* RealtimeModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F435E493C9E4963A89812256 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				451678F8D8B5FCDCA0C3CD8D /* LiquidRoma.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		410C2210FECBB88638C2950F /* LiquidRoma */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83B9F9C75E60045C9AC28729 /* Build configuration list for PBXNativeTarget "LiquidRoma" */;
+			buildPhases = (
+				8FDB6E1D99B20D6A10047726 /* Sources */,
+				5C2A087A4E069EC927E7B127 /* Resources */,
+				53EFB0C8E09E72E8BB5AE691 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiquidRoma;
+			packageProductDependencies = (
+				DF213B782C6354E76608A7C4 /* SwiftProtobuf */,
+			);
+			productName = LiquidRoma;
+			productReference = 451678F8D8B5FCDCA0C3CD8D /* LiquidRoma.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5320FBEF544860E71D0FA685 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2600;
+			};
+			buildConfigurationList = 9A6DCEF8F0E3878A3B22421A /* Build configuration list for PBXProject "LiquidRoma" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = it;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				it,
+			);
+			mainGroup = 68ACE32DB18988F1CE77DF4B;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3E40816F950162242A148FE3 /* XCRemoteSwiftPackageReference "swift-protobuf" */,
+			);
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				410C2210FECBB88638C2950F /* LiquidRoma */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C2A087A4E069EC927E7B127 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23E58C7253D1AEB9F45C7603 /* Assets.xcassets in Resources */,
+				8F1F0543261F6CAEE5175D96 /* agency.txt in Resources */,
+				D5C0F0D279F7396B0469340E /* calendar_dates.txt in Resources */,
+				C5C5A837C241AFEF8DDFCBB4 /* routes.txt in Resources */,
+				EBF8FBC0CEF2F8FE9C989760 /* shapes.txt in Resources */,
+				57EEE35E86F6EB2626235F5A /* stop_times.txt in Resources */,
+				7B386E79063925EF3ED251C4 /* stops.txt in Resources */,
+				20CB9FA0037629B6B7652DA1 /* trips.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FDB6E1D99B20D6A10047726 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7826EA6BE6AD783F1CA0E982 /* AlertsView.swift in Sources */,
+				3AB2D4BFC1D35F4BD2668DFB /* AlertsViewModel.swift in Sources */,
+				6691F97EF561AB60423A65C2 /* ArrivalTimeView.swift in Sources */,
+				27E5C8831BFE8A9195C3DF55 /* ContentView.swift in Sources */,
+				D23DD9E5A92553FC582905CC /* FavoriteItem.swift in Sources */,
+				E0C0F04305600019D86A65BF /* FavoritesService.swift in Sources */,
+				7226DFA7A78A97F71027FFFB /* GTFSDataService.swift in Sources */,
+				97265BE69F04E75A6545F88C /* GTFSModels.swift in Sources */,
+				B667742D57A41F7C34F126E4 /* GTFSRealtimeService.swift in Sources */,
+				16DA96DB1BE8116BD9767768 /* HomeView.swift in Sources */,
+				292DB9D7B92FAE5B901D84E6 /* HomeViewModel.swift in Sources */,
+				D7682AE1F4160EFFEB3D3D84 /* LineDetailView.swift in Sources */,
+				7DDE30FE926DD261B2077D9B /* LineDetailViewModel.swift in Sources */,
+				3C7329EBBD040135059520CA /* LinesView.swift in Sources */,
+				653D91A45CFC414BA1D3B5A4 /* LinesViewModel.swift in Sources */,
+				80082485E1D24D78008B666A /* LiquidRomaApp.swift in Sources */,
+				2F1848F11E215DDFCB924DE4 /* LocationService.swift in Sources */,
+				9EEDA7C63006980F0C39294F /* OccupancyBadge.swift in Sources */,
+				53019042F00F2C5EB51705E0 /* QuadTree.swift in Sources */,
+				424D140D8B00417C463837B9 /* RealtimeModels.swift in Sources */,
+				BCD330CA5F1EA12CF48AFD3A /* SearchView.swift in Sources */,
+				6FE0EB0DE261AF964AE4A744 /* SnakeBusScene.swift in Sources */,
+				C532A291CC0510EF4728CF6D /* SnakeBusView.swift in Sources */,
+				51B9D76FA45B4BE719B3BB04 /* StopsView.swift in Sources */,
+				D8B3BB05E603682D94E48AF3 /* StopsViewModel.swift in Sources */,
+				27166964209E968FC91353D0 /* gtfs-realtime.pb.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1F7809CBFC80AD7EADF18450 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LiquidRoma/LiquidRoma.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = LiquidRoma/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Liquid Roma";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "LiquidRoma needs your location to show nearby stops and bus arrivals.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.liquidroma.LiquidRoma;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		30E1652C7AEF67DE87F23A29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LiquidRoma/LiquidRoma.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = LiquidRoma/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Liquid Roma";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "LiquidRoma needs your location to show nearby stops and bus arrivals.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.liquidroma.LiquidRoma;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		69F2CD319ADAD0A9E611DD13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiquidRoma/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9AA1EE00F34A1F10276058EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiquidRoma/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83B9F9C75E60045C9AC28729 /* Build configuration list for PBXNativeTarget "LiquidRoma" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30E1652C7AEF67DE87F23A29 /* Debug */,
+				1F7809CBFC80AD7EADF18450 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A6DCEF8F0E3878A3B22421A /* Build configuration list for PBXProject "LiquidRoma" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69F2CD319ADAD0A9E611DD13 /* Debug */,
+				9AA1EE00F34A1F10276058EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3E40816F950162242A148FE3 /* XCRemoteSwiftPackageReference "swift-protobuf" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-protobuf.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.28.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DF213B782C6354E76608A7C4 /* SwiftProtobuf */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3E40816F950162242A148FE3 /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = SwiftProtobuf;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5320FBEF544860E71D0FA685 /* Project object */;
+}
